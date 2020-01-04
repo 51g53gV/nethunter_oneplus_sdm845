@@ -1,9 +1,11 @@
 
- ## OnePlus 6 - NetHunter kernel
+ ## OnePlus 6 / 6T - NetHunter kernel
  
  ### Supports
  * Android 10
  * A bunch of external WiFi adapters
+ * A bunch of Bluetooth adapters
+ * CAN network support
  * Frame injection patches added
  * HID gadget
  * USB gadget
@@ -27,4 +29,8 @@ Then you will need to edit the "run.sh" and "build.sh" to point to correct setup
 
 
  ### Wi-Fi chipsets tested
- * rt2800usb: supports monitor mode and frame injection
+ * rt2800usb: supports monitor mode and frame injection.
+ * carl9170: support monitor mode and frame injection.
+ * rt73usb: support monitor mode, not frame injection.
+ * r8188eu: does not support monitor mode or frame injection at this point.
+
