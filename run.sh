@@ -34,7 +34,7 @@ restore='\033[0m'
 
 # Source defconfig used to build
 	##dc=nethunter_defconfig
-	dc=nethunter_defconfig
+	dc=device_defconfig
 
 # Source Path to kernel tree
 	k=/root/Desktop/KERNEL/nethunter_kernel_development
