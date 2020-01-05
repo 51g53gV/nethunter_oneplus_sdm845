@@ -84,6 +84,6 @@ restore='\033[0m'
 	echo "	Starting first build.."
 	make "$o" REAL_CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- DTC_EXT=/usr/bin/dtc CONFIG_DEBUG_SECTION_MISMATCH=y $th
 	#./scripts/config --file ./out/.config -e BUILD_ARM64_DT_OVERLAY
-	#make "$o" INSTALL_MOD_PATH="." INSTALL_MOD_STRIP=1 modules_install $th
+	make "$o" INSTALL_MOD_PATH="." INSTALL_MOD_STRIP=1 modules_install $th
 	echo "	Build complete!"
 
