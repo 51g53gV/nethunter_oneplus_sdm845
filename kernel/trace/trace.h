@@ -1681,6 +1681,7 @@ static inline void trace_event_enum_update(struct trace_enum_map **map, int len)
 
 extern struct trace_iterator *tracepoint_print_iter;
 
+
 /*
  * Reset the state of the trace_iterator so that it can read consumed data.
  * Normally, the trace_iterator is used for reading the data when it is not
