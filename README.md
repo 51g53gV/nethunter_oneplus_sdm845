@@ -6,6 +6,7 @@
  * A bunch of external WiFi adapters
  * A bunch of Bluetooth adapters
  * CAN network support
+ * Latest linux-firmware integrated in kernel
  * Frame injection patches added
  * HID gadget
  * USB gadget
@@ -13,7 +14,11 @@
  
  ### TODO
  * Add wireguard support
+ * Add rt73usb injection support
+ * Add support for rtl8812au drivers (from aircrack-ng)
+ * Add support for rtl8188eus drivers (from aircrack-ng)
  * Merge more/newer linux stable kernel patches
+ * Fix some more compiler warnings
 
 ### HowTo build kernel source
 First you will require a functionally toolchain, create toolchain folder and setup ..
