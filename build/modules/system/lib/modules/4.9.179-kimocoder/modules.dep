@@ -1,0 +1,14 @@
+kernel/drivers/video/backlight/lcd.ko:
+kernel/drivers/soc/qcom/llcc_perfmon.ko:
+kernel/drivers/char/rdbg.ko:
+kernel/drivers/media/platform/msm/broadcast/tspp.ko:
+kernel/drivers/media/platform/msm/dvb/adapter/mpq-adapter.ko:
+kernel/drivers/media/platform/msm/dvb/demux/mpq-dmx-hw-plugin.ko: kernel/drivers/media/platform/msm/broadcast/tspp.ko kernel/drivers/media/platform/msm/dvb/adapter/mpq-adapter.ko
+kernel/drivers/mmc/card/mmc_test.ko:
+kernel/drivers/staging/rtl8192u/r8192u_usb.ko:
+kernel/drivers/staging/rtl8192e/rtllib.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_ccmp.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_tkip.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_wep.ko:
+kernel/drivers/staging/rtl8192e/rtl8192e/r8192e_pci.ko: kernel/drivers/staging/rtl8192e/rtllib.ko
+kernel/net/bridge/br_netfilter.ko:

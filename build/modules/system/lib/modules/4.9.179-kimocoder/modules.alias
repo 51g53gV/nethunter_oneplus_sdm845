@@ -1,0 +1,14 @@
+# Aliases extracted from modules themselves.
+alias of:N*T*Cqcom,llcc-perfmonC* llcc_perfmon
+alias of:N*T*Cqcom,llcc-perfmon llcc_perfmon
+alias usb:v043Ep7A01d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v5A57p0290d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v2001p3301d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v1740p9201d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v0DF6p0031d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v050Dp805Ed*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v07AAp0043d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias usb:v0BDAp8709d*dc*dsc*dp*ic*isc*ip*in* r8192u_usb
+alias pci:v000007AAd00000047sv*sd*bc*sc*i* r8192e_pci
+alias pci:v000007AAd00000044sv*sd*bc*sc*i* r8192e_pci
+alias pci:v000010ECd00008192sv*sd*bc*sc*i* r8192e_pci
