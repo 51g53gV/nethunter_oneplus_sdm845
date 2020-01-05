@@ -31,10 +31,10 @@ restore='\033[0m'
 	dc=nethunter_defconfig
 
 # Source Path to kernel tree
-	k=/root/Desktop/KERNEL/kernel_oneplus_sdm845
+	k=/root/Desktop/KERNEL/nethunter_kernel_development
 
 # Compile Path to out
-	o="O=/root/Desktop/KERNEL/kernel_oneplus_sdm845/out"
+	o="O=/root/Desktop/KERNEL/nethunter_kernel_development/out"
 
 # CPU threads
 	th="-j$(grep -c ^processor /proc/cpuinfo)"
