@@ -6,6 +6,7 @@
  * A bunch of external WiFi adapters
  * A bunch of Bluetooth adapters
  * CAN network support
+ * Latest linux-firmware integrated in kernel
  * Frame injection patches added
  * HID gadget
  * USB gadget
