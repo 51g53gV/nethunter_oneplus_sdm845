@@ -26,7 +26,7 @@
 
 #include <linux/timer.h>
 #include <linux/delay.h>
-#include <linux/project_info.h>
+//#include <linux/project_info.h>
 
 #define DRV_NAME	"tri-state-key"
 
@@ -84,9 +84,9 @@ static int set_gpio_by_pinctrl(void)
 static void extcon_dev_work(struct work_struct *work)
 {
     int key[3]={0,0,0};
-    int hw_version=0; 
+    int hw_version=0;
     /*hw 13 use special tri state key no use key2*/
-    hw_version=get_hw_version();
+    //hw_version=get_hw_version();
     pr_err("%s ,hw_version=%d\n",__func__, hw_version);
     if (hw_version == 13)
     {
