@@ -458,6 +458,14 @@ remove_section() {
   fi;
 }
 
+insert_after_last() {
+	grep -q "^$3$" "$1" || {
+		line=$(($(grep -n "^[[:space:]]*$2[[:space:]]*$" "$1" | tail -1 | cut -d: -f1) + 1))
+		sed -i "${line}i$3" "$1"
+	}
+}
+
+
 # insert_line <file> <if search string> <before|after> <line match string> <inserted line>
 insert_line() {
   local offset line;
