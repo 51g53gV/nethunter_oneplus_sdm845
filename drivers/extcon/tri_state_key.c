@@ -26,7 +26,7 @@
 
 #include <linux/timer.h>
 #include <linux/delay.h>
-//#include <linux/project_info.h>
+#include <linux/project_info.h>
 
 #define DRV_NAME	"tri-state-key"
 

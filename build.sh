@@ -83,20 +83,20 @@ restore='\033[0m'
 ############################################################
 
 	echo "	Establishing build environment.."
-	make "$o" CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- "$dc"
+	make "$o" REAL_CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- "$dc"
 
 ############################################################
 # Start Compile
 ############################################################
 
 	echo "	First pass started.."
-	make "$o" CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- DTC_EXT=/usr/bin/dtc $th
+	make "$o" REAL_CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- DTC_EXT=/usr/bin/dtc $th
 	echo "	First pass completed!"
 	echo "	"
 	echo "	Starting Second Pass.."
-	make "$o" CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- DTC_EXT=/usr/bin/dtc $th
+	make "$o" REAL_CC=${CC_DIR}/clang CLANG_TRIPLE=aarch64-linux-gnu- DTC_EXT=/usr/bin/dtc $th
 	echo "	Second pass completed!"
-	make "$o" INSTALL_MOD_PATH="." INSTALL_MOD_STRIP=1 modules_install $th
+	make "$o" INSTALL_MOD_PATH="." INSTALL_MOD_STRIP=1 modules_install -j2
 
 ############################################################
 # Copy image.gz-dtb to /build
