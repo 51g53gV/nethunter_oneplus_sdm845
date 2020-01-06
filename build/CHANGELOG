@@ -1,0 +1,221 @@
+====================
+     2020-01-06    
+====================
+85b15ca  Forgot to include the external modules  [kimocoder]
+e154258  Tweak. Booting and tested working.  [kimocoder]
+2b015eae  Minor fixes  [kimocoder]
+ad588da  Fix 1 more compile warning  [kimocoder]
+2fcec1b  Upload latest  [kimocoder]
+7e327fa  Add config from /proc/config.gz + other minors  [kimocoder]
+84e45d0  sched/fair: Don't free p->numa_faults with concurrent readers  [kimocoder]
+c20c511  arm64: compat: Provide definition for COMPAT_SIGMINSTKSZ  [kimocoder]
+7571e08  Upload a working build env + zip  [kimocoder]
+93ac900  Final push for now. Working.  [kimocoder]
+a45cdee  Final fixes/cleanup  [kimocoder]
+968bc1c  Fixed a minor return in ath9k  [kimocoder]
+fd3aca1  usb: wusbcore: fix unbalanced get/put cluster_id  [kimocoder]
+10c8468  locking/lockdep: Hide unused 'class' variable  [kimocoder]
+a1961fe  sh: prevent warnings when using iounmap  [kimocoder]
+4537727  f2fs: avoid out-of-range memory access  [kimocoder]
+c60e315  perf test mmap-thread-lookup: Initialize variable to suppress memory sanitizer warning  [kimocoder]
+517ce8e  um: Silence lockdep complaint about mmap_sem  [kimocoder]
+d81d015  kbuild: Add -Werror=unknown-warning-option to CLANG_FLAGS  [kimocoder]
+2fd24b2  usb: core: hub: Disable hub-initiated U1/U2  [kimocoder]
+0a7e67e  lib/strscpy: Shut up KASAN false-positives in strscpy()  [kimocoder]
+194d6ce  compiler.h: Add read_word_at_a_time() function.  [kimocoder]
+9de1f5e  compiler.h, kasan: Avoid duplicating __read_once_size_nocheck()  [kimocoder]
+7070c9c  coda: pass the host file in vma->vm_file on mmap  [kimocoder]
+75c64e2  padata: use smp_mb in padata_reorder to avoid orphaned padata jobs  [kimocoder]
+32e0171  fs/proc/proc_sysctl.c: fix the default values of i_uid/i_gid on /proc/sys inodes  [kimocoder]
+e519ce7  tracing/snapshot: Resize spare buffer if size changed  [kimocoder]
+0432cf1  bcache: check c->gc_thread by IS_ERR_OR_NULL in cache_set_flush()  [kimocoder]
+9687477  crypto: asymmetric_keys - select CRYPTO_HASH where needed  [kimocoder]
+b31101c  perf tools: Increase MAX_NR_CPUS and MAX_CACHES  [kimocoder]
+7a59917  mt7601u: do not schedule rx_tasklet when the device has been disconnected  [kimocoder]
+156eb85  timer_list: Guard procfs specific code  [kimocoder]
+c240f45  media: i2c: fix warning same module names  [kimocoder]
+7c02df4  vhost_net: disable zerocopy by default  [kimocoder]
+add0c30  bpf: silence warning messages in core  [kimocoder]
+366f863  regmap: fix bulk writes on paged registers  [kimocoder]
+4202665  locking/lockdep: Fix merging of hlocks with non-zero references  [kimocoder]
+be754f8  net: phy: Check against net_device being NULL  [kimocoder]
+505481a  signal/pid_namespace: Fix reboot_pid_ns to use send_sig not force_sig  [kimocoder]
+79bbc4f  ath: DFS JP domain W56 fixed pulse type 3 RADAR detection  [kimocoder]
+6bc7861  ath6kl: add some bounds checking  [kimocoder]
+4561d54  ath9k: Check for errors when reading SREV register  [kimocoder]
+d9d7f74  ath10k: Do not send probe response template for mesh  [kimocoder]
+62814f0  arm64/efi: Mark __efistub_stext_offset as an absolute symbol explicitly  [kimocoder]
+0eb8c6a  dm verity: use message limit for data block corruption message  [kimocoder]
+a9a4878  arm64: crypto: remove accidentally backported files  [kimocoder]
+8bd8cf9  carl9170: fix misuse of device driver API  [kimocoder]
+e063e30  usb: renesas_usbhs: add a workaround for a race condition of workqueue  [kimocoder]
+5663e1d  usb: gadget: ether: Fix race between gether_disconnect and rx_submit  [kimocoder]
+08f1a06  p54usb: Fix race between disconnect and firmware loading  [kimocoder]
+7cd7c35  fscrypt: don't set policy for a dead directory  [kimocoder]
+f45c48f  mac80211: only warn once on chanctx_conf being NULL  [kimocoder]
+d4af99d  mac80211: free peer keys before vif down in mesh  [kimocoder]
+40b4ec1  mac80211: mesh: fix RCU warning  [kimocoder]
+792fa04  samples, bpf: fix to change the buffer size for read()  [kimocoder]
+f2fe1ab  arm64: kaslr: keep modules inside module region when KASAN is enabled  [kimocoder]
+d57bd7d  ptrace: Fix ->ptracer_cred handling for PTRACE_TRACEME  [kimocoder]
+9f73447  ARC: handle gcc generated __builtin_trap for older compiler  [kimocoder]
+31b246c  bug.h: work around GCC PR82365 in BUG()  [kimocoder]
+18f975c  mfd: omap-usb-tll: Fix register offsets  [kimocoder]
+5547735  scripts/decode_stacktrace.sh: prefix addr2line with  [kimocoder]
+a07d763  usb: gadget: udc: lpc32xx: allocate descriptor with GFP_ATOMIC  [kimocoder]
+5a7d225f  usb: gadget: fusb300_udc: Fix memory leak of fusb300->ep[i]  [kimocoder]
+f06c60f  net: check before dereferencing netdev_ops during busy poll  [kimocoder]
+2b27078  nfc: pn5xx: Hide no-enum-conversion warning  [kimocoder]
+bacd042  scsi: ufs: fix compilation without tracepoints  [kimocoder]
+be2bcd3  build: Remove appending plus sign  [kimocoder]
+63122da  bonding: Always enable vlan tx offload  [kimocoder]
+cfa82cf  team: Always enable vlan tx offload  [kimocoder]
+605aebd  sctp: change to hold sk after auth shkey is created successfully  [kimocoder]
+42295ed  net: stmmac: fixed new system time seconds value calculation  [kimocoder]
+a32f396  cpu/speculation: Warn on unsupported mitigations= parameter  [kimocoder]
+58d78af  fs/binfmt_flat.c: make load_flat_shared_library() work  [kimocoder]
+99f2ebc  fs/proc/array.c: allow reporting eip/esp for all coredumping threads  [kimocoder]
+7b0c382  net/9p: include trans_common.h to fix missing prototype warning  [kimocoder]
+494bcbb  perf header: Fix unchecked usage of strncpy()  [kimocoder]
+d556590  perf help: Remove needless use of strncpy()  [kimocoder]
+573da76  perf ui helpline: Use strlcpy() as a shorter form of strncpy() + explicit set nul  [kimocoder]
+7a55f30  mac80211: Do not use stack memory with scatterlist for GMAC  [kimocoder]
+4619b6f  mac80211: drop robust management frames from unknown TA  [kimocoder]
+3581b8c  cfg80211: fix memory leak of wiphy device name  [kimocoder]
+d44ad11  scripts/checkstack.pl: Fix arm64 wrong or unknown architecture  [kimocoder]
+7b465fa  nvme: Fix u32 overflow in the number of namespace list calculation  [kimocoder]
+196a518  scsi: ufs: Check that space was properly alloced in copy_query_response  [kimocoder]
+056aecf  apparmor: enforce nullbyte at end of tag string  [kimocoder]
+f126448  revert: trace fixes lead to compile failure  [kimocoder]
+6ef024f  usb: chipidea: udc: workaround for endpoint conflict issue  [kimocoder]
+c23863c  tracing: Silence GCC 9 array bounds warning  [kimocoder]
+71395d1  allow stock modules to load  [kimocoder]
+8b478b4  disable crc check  [kimocoder]
+d9a0337  added fsync on/off support  [kimocoder]
+fd5075a  printk: Fix mismatch error  [kimocoder]
+081414a  msm_performance: don't limit min and max cpu freq  [kimocoder]
+4d6cdd1   initramfs: add skip_override parameter  [kimocoder]
+09211e1  zram: use lz4 compression by default  [kimocoder]
+c315ad7  Tweak defconfig + fix some minors  [kimocoder]
+44f839f  drm/msm: allow sde_atrace to show up on different process  [kimocoder]
+0727fe9  drm/msm: enable counter trace  [kimocoder]
+1205523  arm64: lib: memory utilities optimization  [kimocoder]
+ab0924c  drm/msm: use async probe  [kimocoder]
+d8b609e  char: amd64-agp: Use 64-bit arithmetic instead of 32-bit  [kimocoder]
+566fe0f  kcal: pie: fix used pcc setup for sde path  [kimocoder]
+
+====================
+     2020-01-05    
+====================
+205a9c9  Merge some overall fixes  [kimocoder]
+dd5cf12  Merge branch 'development' of https://github.com/kimocoder/kernel_oneplus_sdm845 into development  [kimocoder]
+a35f6b7  Update README.md  [Christian Bremvåg]
+a3255d0  Update README.md  [Christian Bremvåg]
+346bf5e  Update README.md  [Christian Bremvåg]
+b570e6e  Add linux-firmware to kernel  [kimocoder]
+09e70b8  Tweak defconfig due to errors  [kimocoder]
+8bec684  Add frame injection patches  [kimocoder]
+a9607cc  Update README.md  [Christian Bremvåg]
+be890d1  f_fs: Return correct USB endpoint descriptor to user space daemon  [kimocoder]
+13d32b6  usb: dwc3: gadget: Prevent core from processing stale TRBs  [kimocoder]
+188b4639  workqueue: change permissions to allow root control of wq_power_efficient toggle  [kimocoder]
+731dbee  Allow stock modules to load  [kimocoder]
+b57bdea  arm64: support __int128 with clang  [kimocoder]
+aa57b4a  include: Update compiler-gcc.h  [kimocoder]
+f44ecdd  kernel/sched: Reduce latency for better responsiveness  [kimocoder]
+9f13a55  arm64: Use optimized memcmp  [kimocoder]
+f8f930d  Compiler Attributes: add support for __copy (gcc >= 9)  [kimocoder]
+60d634a  Makefile: disable debugging  [kimocoder]
+86f80a9  tracing: Silence GCC 9 array bounds warning  [kimocoder]
+5935454  qseecom: micro optimization for module detection  [kimocoder]
+8670ced  Tweak defconfig again  [kimocoder]
+
+====================
+     2020-01-04    
+====================
+00df098  Tweak defconfig  [kimocoder]
+cc8a6b8  Fix kernel version  [kimocoder]
+919fc44  Add buildscripts and prepare  [kimocoder]
+
+====================
+     2020-01-03    
+====================
+
+====================
+     2020-01-02    
+====================
+
+====================
+     2020-01-01    
+====================
+a16f477  drm: allow dc dimming code to run  [Marko Man]
+be027a6  gpu: drm: force fp pressed if fp mode on  [Vachounet]
+e238e8b  op6/t: fix guard of FP proximity  [micky387]
+753ad3e  bring back fp proximity check for op6  [Marko Man]
+7ea62a7  usb: remove OOS tricks  [Marko Man]
+23a644e  synaptics: add compatibiltity proc API for our device settings  [maxwen]
+f49c6c1  proc: Remove additional SafetyNet flags from /proc/cmdline  [Sultanxda]
+14e5edc  proc: Remove verifiedbootstate flag from /proc/cmdline  [Sultanxda]
+855c069  leds-qpnp-haptics: allow user adjustment  [flar2]
+b29dd55  leds-qpnp-haptics: expose vibrator  [flar2]
+09a01a8  display: strip op mode strings from sysfs  [Marko Man]
+fe2eb1a  oneplus6: config: enable CRYPTO_SHA512  [Vachounet]
+3a88953  Revert "Android.bp: Initial header export bp for Android (qseecom only)"  [Marko Man]
+c8d2569  techpack: audio import Synchronize codes for OP6_O2_BETA_30 and OP6T_O2_BETA_30  [Marko Man]
+d7fff30  defconfig: enable modversions  [Marko Man]
+55c683f  module: Allow wlan to load with CONFIG_MODVERSIONS  [nathanchance]
+af634a4  defconfig: build dto  [Marko Man]
+9c8ad7a  arm64: ICK defconfig  [dragonGR]
+ddf3dd5  Allow wlan module to load  [flar2]
+218ae79  rtc: qpnp: Adjust power-on alarm time.  [Danny Baumann]
+de89737  dtc: quiet  [tbalden]
+aabefe7  dts: remove vendor avb  [Marko Man]
+a4c94ec  Import OOS drivers  [dragonGR]
+1247c50  scripts/dtc: Update to upstream version v1.4.6-9-gaadd0b65c987  [Rob Herring]
+c3e0dae  scripts/dtc: Update to upstream version v1.4.5-6-gc1e55a5513e9  [Rob Herring]
+6bdfda3  scripts/dtc: Update to upstream version v1.4.5-3-gb1a60033c110  [Rob Herring]
+76740cd8  scripts/dtc: add fdt_overlay.c and fdt_addresses.c to sync script  [Rob Herring]
+16e7954  scripts/dtc: dtx_diff - 2nd update of include dts paths to match build  [Frank Rowand]
+ae99184  scripts/dtc: fix '%zx' warning  [Russell King]
+1fc2d9b  scripts/dtc: dtx_diff - update include dts paths to match build  [Frank Rowand]
+42b86ba  scripts/dtc: dtx_diff - Show real file names in diff header  [Geert Uytterhoeven]
+d341744  dtc: check.c fix compile error  [Shuah Khan]
+e14f650  dtc: update warning settings for new bus and node/property name checks  [Rob Herring]
+2229a50  scripts/dtc: Update to upstream version v1.4.4-8-g756ffc4f52f6  [Rob Herring]
+bca7070  scripts/dtc: automate getting dtc version and log in update script  [Rob Herring]
+5ac3768  scripts/dtc: Update to upstream version 0931cea3ba20  [Rob Herring]
+22aa441  Revert "scripts: Makefile: add support to use external DTC"  [Luca Stefani]
+5be25d6  Revert "dtc: add integer overflow checks in fdt header"  [Luca Stefani]
+
+====================
+     2019-12-31    
+====================
+
+====================
+     2019-12-30    
+====================
+
+====================
+     2019-12-29    
+====================
+
+====================
+     2019-12-28    
+====================
+
+====================
+     2019-12-27    
+====================
+
+====================
+     2019-12-26    
+====================
+
+====================
+     2019-12-25    
+====================
+
+====================
+     2019-12-24    
+====================
+

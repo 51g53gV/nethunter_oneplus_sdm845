@@ -133,7 +133,6 @@ kernel/configs/android-*.cfg
 *.patch
 *.list
 out/*
-build/CHANGELOG
 out
 upload/
 upload/
