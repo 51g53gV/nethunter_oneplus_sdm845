@@ -1034,12 +1034,10 @@ static int qusb_phy_probe(struct platform_device *pdev)
 	if (of_property_match_string(dev->of_node,
 		"clock-names", "iface_clk") >= 0) {
 		qphy->iface_clk = devm_clk_get(dev, "iface_clk");
-		}
 		if (IS_ERR(qphy->iface_clk)) {
 			ret = PTR_ERR(qphy->iface_clk);
 			qphy->iface_clk = NULL;
-		}
-		if (ret == -EPROBE_DEFER) {
+		if (ret == -EPROBE_DEFER)
 			return ret;
 			dev_err(dev, "couldn't get iface_clk(%d)\n", ret);
 		}
