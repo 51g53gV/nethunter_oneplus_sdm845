@@ -134,6 +134,3 @@ kernel/configs/android-*.cfg
 *.list
 out/*
 out
-upload/
-upload/
-upload/*

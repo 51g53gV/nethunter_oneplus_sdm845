@@ -7,7 +7,7 @@
 properties() { '
 kernel.string=NetHunter Kernel for the OnePlus 6/6T
 do.devicecheck=1
-do.modules=1
+do.modules=0
 do.cleanup=0
 do.cleanuponabort=0
 device.name1=OnePlus6

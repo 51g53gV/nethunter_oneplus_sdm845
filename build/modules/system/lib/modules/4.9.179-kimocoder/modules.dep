@@ -1,93 +1,14 @@
-kernel/crypto/michael_mic.ko:
 kernel/drivers/video/backlight/lcd.ko:
 kernel/drivers/soc/qcom/llcc_perfmon.ko:
 kernel/drivers/char/rdbg.ko:
-kernel/drivers/misc/eeprom/eeprom_93cx6.ko:
-kernel/drivers/net/phy/microchip.ko:
-kernel/drivers/net/wireless/admtek/adm8211.ko: kernel/drivers/misc/eeprom/eeprom_93cx6.ko
-kernel/drivers/net/wireless/ath/ath5k/ath5k.ko: kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath9k/ath9k.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko: kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath9k/ath9k_htc.ko: kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko kernel/drivers/net/wireless/ath/ath9k/ath9k_hw.ko kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/carl9170/carl9170.ko: kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath6kl/ath6kl_core.ko:
-kernel/drivers/net/wireless/ath/ath6kl/ath6kl_usb.ko: kernel/drivers/net/wireless/ath/ath6kl/ath6kl_core.ko
-kernel/drivers/net/wireless/ath/ar5523/ar5523.ko:
-kernel/drivers/net/wireless/ath/ath10k/ath10k_core.ko: kernel/drivers/net/wireless/ath/ath.ko
-kernel/drivers/net/wireless/ath/ath.ko:
-kernel/drivers/net/wireless/atmel/at76c50x-usb.ko:
-kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko:
-kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko: kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
-kernel/drivers/net/wireless/intersil/hostap/hostap.ko: kernel/net/wireless/lib80211.ko
-kernel/drivers/net/wireless/intersil/orinoco/orinoco.ko:
-kernel/drivers/net/wireless/intersil/orinoco/orinoco_pci.ko: kernel/drivers/net/wireless/intersil/orinoco/orinoco.ko
-kernel/drivers/net/wireless/intersil/orinoco/orinoco_usb.ko: kernel/drivers/net/wireless/intersil/orinoco/orinoco.ko
-kernel/drivers/net/wireless/intersil/p54/p54common.ko:
-kernel/drivers/net/wireless/intersil/p54/p54usb.ko: kernel/drivers/net/wireless/intersil/p54/p54common.ko
-kernel/drivers/net/wireless/marvell/libertas/libertas.ko:
-kernel/drivers/net/wireless/marvell/libertas/usb8xxx.ko: kernel/drivers/net/wireless/marvell/libertas/libertas.ko
-kernel/drivers/net/wireless/marvell/libertas_tf/libertas_tf.ko:
-kernel/drivers/net/wireless/marvell/libertas_tf/libertas_tf_usb.ko: kernel/drivers/net/wireless/marvell/libertas_tf/libertas_tf.ko
-kernel/drivers/net/wireless/mediatek/mt7601u/mt7601u.ko:
-kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko:
-kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko: kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
-kernel/drivers/net/wireless/ralink/rt2x00/rt2800lib.ko: kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
-kernel/drivers/net/wireless/ralink/rt2x00/rt2500usb.ko: kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
-kernel/drivers/net/wireless/ralink/rt2x00/rt73usb.ko: kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
-kernel/drivers/net/wireless/ralink/rt2x00/rt2800usb.ko: kernel/drivers/net/wireless/ralink/rt2x00/rt2800lib.ko kernel/drivers/net/wireless/ralink/rt2x00/rt2x00usb.ko kernel/drivers/net/wireless/ralink/rt2x00/rt2x00lib.ko
-kernel/drivers/net/wireless/realtek/rtl818x/rtl8187/rtl8187.ko: kernel/drivers/misc/eeprom/eeprom_93cx6.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko:
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl_usb.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192c/rtl8192c-common.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192ce/rtl8192ce.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192c/rtl8192c-common.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192cu/rtl8192cu.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtl_usb.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192c/rtl8192c-common.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8188ee/rtl8188ee.ko: kernel/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko:
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8821ae/rtl8821ae.ko: kernel/drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtlwifi/rtl8192ee/rtl8192ee.ko: kernel/drivers/net/wireless/realtek/rtlwifi/btcoexist/btcoexist.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtl_pci.ko kernel/drivers/net/wireless/realtek/rtlwifi/rtlwifi.ko
-kernel/drivers/net/wireless/realtek/rtl8xxxu/rtl8xxxu.ko:
-kernel/drivers/net/wireless/rsi/rsi_91x.ko:
-kernel/drivers/net/wireless/rsi/rsi_usb.ko: kernel/drivers/net/wireless/rsi/rsi_91x.ko
-kernel/drivers/net/wireless/zydas/zd1211rw/zd1211rw.ko:
-kernel/drivers/net/wireless/zydas/zd1201.ko:
-kernel/drivers/net/usb/catc.ko:
-kernel/drivers/net/usb/kaweth.ko:
-kernel/drivers/net/usb/pegasus.ko:
-kernel/drivers/net/usb/rtl8150.ko:
-kernel/drivers/net/usb/r8152.ko:
-kernel/drivers/net/usb/hso.ko:
-kernel/drivers/net/usb/lan78xx.ko:
-kernel/drivers/net/usb/dm9601.ko:
-kernel/drivers/net/usb/sr9700.ko:
-kernel/drivers/net/usb/sr9800.ko:
-kernel/drivers/net/usb/smsc75xx.ko:
-kernel/drivers/net/usb/smsc95xx.ko:
-kernel/drivers/net/usb/int51x1.ko:
-kernel/drivers/net/usb/kalmia.ko:
-kernel/drivers/net/usb/ipheth.ko:
-kernel/drivers/net/usb/sierra_net.ko:
-kernel/drivers/net/usb/cx82310_eth.ko:
-kernel/drivers/net/usb/lg-vl600.ko:
-kernel/drivers/net/usb/qmi_wwan.ko: kernel/drivers/usb/class/cdc-wdm.ko
-kernel/drivers/net/usb/ch9200.ko:
-kernel/drivers/usb/class/cdc-wdm.ko:
 kernel/drivers/media/platform/msm/broadcast/tspp.ko:
 kernel/drivers/media/platform/msm/dvb/adapter/mpq-adapter.ko:
 kernel/drivers/media/platform/msm/dvb/demux/mpq-dmx-hw-plugin.ko: kernel/drivers/media/platform/msm/broadcast/tspp.ko kernel/drivers/media/platform/msm/dvb/adapter/mpq-adapter.ko
 kernel/drivers/mmc/card/mmc_test.ko:
-kernel/drivers/staging/wlan-ng/prism2_usb.ko:
 kernel/drivers/staging/rtl8192u/r8192u_usb.ko:
-kernel/drivers/staging/rtl8192e/rtllib.ko: kernel/net/wireless/lib80211.ko
-kernel/drivers/staging/rtl8192e/rtllib_crypt_ccmp.ko: kernel/net/wireless/lib80211.ko
-kernel/drivers/staging/rtl8192e/rtllib_crypt_tkip.ko: kernel/net/wireless/lib80211.ko
-kernel/drivers/staging/rtl8192e/rtllib_crypt_wep.ko: kernel/net/wireless/lib80211.ko
-kernel/drivers/staging/rtl8192e/rtl8192e/r8192e_pci.ko: kernel/drivers/staging/rtl8192e/rtllib.ko kernel/net/wireless/lib80211.ko
-kernel/drivers/staging/rtl8712/r8712u.ko:
-kernel/drivers/staging/rtl8188eu/r8188eu.ko:
+kernel/drivers/staging/rtl8192e/rtllib.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_ccmp.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_tkip.ko:
+kernel/drivers/staging/rtl8192e/rtllib_crypt_wep.ko:
+kernel/drivers/staging/rtl8192e/rtl8192e/r8192e_pci.ko: kernel/drivers/staging/rtl8192e/rtllib.ko
 kernel/net/bridge/br_netfilter.ko:
-kernel/net/wireless/lib80211.ko:
-kernel/net/wireless/lib80211_crypt_wep.ko: kernel/net/wireless/lib80211.ko
-kernel/net/wireless/lib80211_crypt_ccmp.ko: kernel/net/wireless/lib80211.ko
-kernel/net/wireless/lib80211_crypt_tkip.ko: kernel/net/wireless/lib80211.ko
