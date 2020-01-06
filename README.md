@@ -13,12 +13,14 @@
  * USB OTG-Y (charge while using external adapter)
  
  ### TODO
+ * Fix internal WiFi (currently not working)
+ * Import latest CAF wlan drivers from QualComm
  * Add wireguard support
  * Add rt73usb injection support
  * Add support for rtl8812au drivers (from aircrack-ng)
  * Add support for rtl8188eus drivers (from aircrack-ng)
  * Merge more/newer linux stable kernel patches
- * Fix some more compiler warnings
+ * Fix more compiler warnings
 
 ### HowTo build kernel source
 First you will require a functionally toolchain, create toolchain folder and setup ..
